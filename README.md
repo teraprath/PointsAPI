@@ -85,7 +85,7 @@ api-version: 1.19
 authors: [ Names ]
 depend: [ PointsAPI ]
 ```
-**Step 4:** Now initialize PointsAPI your `main class`:
+**Step 4:** Now initialize PointsAPI in your `onEnable()` method:
 
 ```java
 
