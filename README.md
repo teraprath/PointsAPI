@@ -83,17 +83,31 @@ api-version: 1.19
 authors: [ Names ]
 depend: [ PointsAPI ]
 ```
+Now initialize the PointsAPI in your `main class`:
+
+```java
+
+public final class TestPlugin extends JavaPlugin {
+
+    @Override
+    public void onEnable() {
+        PointsAPI.init(this);
+    }
+
+}
+
+```
 
 ### Basic Usage
 An overview of the methods provided by the PointsAPI.
 
 ```java
 
-int points = PointsAPI.getPoints(player);
-
-        PointsAPI.setPoints(player, amount);
-        PointsAPI.addPoints(player, amount);
-        PointsAPI.removePoints(player, amount);
+PointsAPI.getPoints(player);
+PointsAPI.setPoints(player, amount);
+PointsAPI.addPoints(player, amount);
+PointsAPI.removePoints(player, amount);
+PointsAPI.reset(player);
 
 ```
 ### Asynchronous Processing
@@ -101,7 +115,7 @@ To process tasks asynchronously, use the following method provided by the Bukkit
 
 ```java
 Bukkit.getScheduler().runTaskAsynchronously(plugin, task -> {
-        PointsAPI.addPoints(100);
-        // do stuff
-        });
+    int points = PointsAPI.getPoints(player);
+    // do stuff
+});
 ```
