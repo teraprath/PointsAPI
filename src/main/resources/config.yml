@@ -1,0 +1,13 @@
+mysql:
+  host: localhost
+  port: 3306
+  database: points
+  user: root
+  password: password
+points:
+  start_value: 1000
+language:
+  prefix: "&7[&aPointsAPI&7] "
+  player_not_found: "&7Player &c&o%player% &7not found."
+  points_self: "&7You have &a&l%points% &7points."
+  points_others: "&2%player% has &a&l%points% &7points."

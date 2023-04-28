@@ -1,0 +1,9 @@
+name: PointsAPI
+version: '${project.version}'
+main: dev.teraprath.points.Main
+api-version: 1.19
+authors: [ TerryGHG ]
+commands:
+  points:
+    description: Show your points
+    permission: points.show
