@@ -1,5 +1,3 @@
-
-
 [![](https://jitpack.io/v/teraprath/PointsAPI.svg)](https://jitpack.io/#teraprath/PointsAPI)
 
 # PointsAPI
