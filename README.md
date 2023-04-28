@@ -33,11 +33,15 @@ language:
   points_self: "&7You have &a&l%points% &7points."
   points_others: "&2%player% has &a&l%points% &7points."
 ```
-**Step 3:** Import API using:<br>
+**Step 3:** You're done. PointsAPI is now running on your server.
 
 ## Development API
 
 ### Implementation
+
+**Step 1:** Import using maven or gradle (or manually using the [PointsAPI.jar](https://github.com/teraprath/PointsAPI/releases/latest)):
+<br>
+You can see the latest version [here](https://github.com/teraprath/PointsAPI/releases/latest).
 
 #### Using Maven:
 
@@ -71,9 +75,7 @@ dependencies {
 }
 ````
 
-You can see the latest version [here](https://github.com/teraprath/PointsAPI/releases/latest).
-<br>
-Add PointsAPI as dependency in your `plugin.yml`:
+**Step 2:** Add PointsAPI as dependency in your `plugin.yml`:
 
 ```yaml
 name: TestPlugin
@@ -83,7 +85,7 @@ api-version: 1.19
 authors: [ Names ]
 depend: [ PointsAPI ]
 ```
-Now initialize the PointsAPI in your `main class`:
+**Step 4:** Now initialize PointsAPI your `main class`:
 
 ```java
 
@@ -97,6 +99,8 @@ public final class TestPlugin extends JavaPlugin {
 }
 
 ```
+
+**Step 5:** You're done.
 
 ### Basic Usage
 An overview of the methods provided by the PointsAPI.
