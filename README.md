@@ -1,8 +1,12 @@
+<!--suppress HtmlDeprecatedAttribute -->
+<div align="center">
+
 [![](https://jitpack.io/v/teraprath/PointsAPI.svg)](https://jitpack.io/#teraprath/PointsAPI)
-
-# PointsAPI
-
-PointsAPI (MySQL-Support) for Spigot 1.19+
+<div>
+    <h1>PointsAPI</h1>
+    <p>for Spigot 1.19+<p>
+</div>
+</div>
 
 ## Features
 
@@ -31,7 +35,11 @@ language:
 ```
 **Step 3:** Import API using:<br>
 
-### Maven
+## Development API
+
+### Implementation
+
+#### Using Maven:
 
 ````xml
 
@@ -50,7 +58,7 @@ language:
 </dependency>
 ````
 
-### Gradle
+#### Using Gradle:
 
 ````groovy
 repositories {
@@ -65,9 +73,16 @@ dependencies {
 
 You can see the latest version [here](https://github.com/teraprath/PointsAPI/releases/latest).
 <br>
-**Step 4:** You're done!
+Add PointsAPI as dependency in your `plugin.yml`:
 
-## Development API
+```yaml
+name: TestPlugin
+version: 1.0
+main: net.name.testplugin.Main
+api-version: 1.19
+authors: [ Names ]
+depend: [ PointsAPI ]
+```
 
 ### Basic Usage
 An overview of the methods provided by the PointsAPI.
@@ -76,9 +91,9 @@ An overview of the methods provided by the PointsAPI.
 
 int points = PointsAPI.getPoints(player);
 
-PointsAPI.setPoints(player, amount);
-PointsAPI.addPoints(player, amount);
-PointsAPI.removePoints(player, amount);
+        PointsAPI.setPoints(player, amount);
+        PointsAPI.addPoints(player, amount);
+        PointsAPI.removePoints(player, amount);
 
 ```
 ### Asynchronous Processing
@@ -86,7 +101,7 @@ To process tasks asynchronously, use the following method provided by the Bukkit
 
 ```java
 Bukkit.getScheduler().runTaskAsynchronously(plugin, task -> {
-	PointsAPI.addPoints(100);
-	// do stuff
-});
+        PointsAPI.addPoints(100);
+        // do stuff
+        });
 ```
