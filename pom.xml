@@ -6,7 +6,7 @@
 
     <groupId>dev.teraprath</groupId>
     <artifactId>points</artifactId>
-    <version>1.2.6-STABLE</version>
+    <version>1.2.7-STABLE</version>
     <packaging>jar</packaging>
 
     <name>PointsAPI</name>
