@@ -1,0 +1,19 @@
+mysql:
+  host: localhost
+  port: 3306
+  database: points
+  user: root
+  password: password
+
+# Start balance on first join
+start_points: 0
+
+language:
+  prefix: "&8[&6Points&8] "
+  player_not_found: "&7Player &c%player% &7not found."
+  points_self: "&7You have &6%points% &7points."
+  points_others: "&2%player% has &6%points% &7points."
+  player_points_set: "&7Points of &2%player% &7has been set to &6%amount%."
+  player_points_removed: "&2%amount% &7removed from &2%player%'s &7Points."
+  player_points_added: "&6%amount% &7added to &2%player%'s &7Points."
+  wrong_usage: "&7Wrong usage: &6%usage%"
