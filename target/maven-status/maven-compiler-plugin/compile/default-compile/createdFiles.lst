@@ -1,9 +1,0 @@
-dev\teraprath\points\listener\LoginListener.class
-dev\teraprath\points\Main.class
-dev\teraprath\points\command\PointsCommand.class
-dev\teraprath\points\command\AdminCommand.class
-dev\teraprath\points\utils\MessageUtils.class
-dev\teraprath\points\utils\RegisterUtils.class
-dev\teraprath\points\sql\SQLAdapter.class
-dev\teraprath\points\sql\SQLAuthentication.class
-dev\teraprath\points\api\PointsAPI.class
