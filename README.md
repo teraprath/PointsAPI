@@ -13,6 +13,7 @@
 - Easy to use and lightweight
 - MySQL-Support
 - Points Command (100% Configurable)
+- Compatible with [StatsAPI](https://github.com/teraprath/StatsAPI)
 
 ## Implementation
 
